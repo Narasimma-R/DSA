@@ -1,5 +1,5 @@
 ### Largest Cycle
-Problem Description :- Largest Sum Cycle
+Problem Description :- Largest Cycle
 
 Given a maze with N cells. Each cell may have multiple entry points but not more than one
 exit(i.e entry/exit points are unidirectional doors like valves).
