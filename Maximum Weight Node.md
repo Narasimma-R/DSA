@@ -20,22 +20,25 @@ Sample Output :
 ``` java
 package Problems.Graph;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class MaximumNodeWeight {
     public static void main(String[] args) {
-        Scanner ip = new Scanner(System.in);
-        int num = ip.nextInt();
-        int[] nodes = new int[num];
-        int[] sum = new int[num];
-        for (int i = 0; i < num; i++) nodes[i] = ip.nextInt();
-        for (int i = 0; i < num; i++) {
-            if(nodes[i]!=-1) sum[nodes[i]] += i;
-            System.out.println("sum " + Arrays.toString(sum));
-        }
-        System.out.println();
+        Scanner ip=new Scanner(System.in);
+        int num=ip.nextInt();
+        int[]nodes=new int[num];
+        int[]sum=new int[num];
+        int max=Integer.MIN_VALUE;
+        int index=-1;
+        for(int i=0;i<num;i++) nodes[i]=ip.nextInt();
+        for(int i=0;i<num;i++)
+            if(nodes[i]!=-1) sum[nodes[i]]+=i;
+        for(int i=0;i<sum.length;i++)
+            if(max<sum[i]){
+                max=sum[i];
+                index=i;
+            }
+        System.out.println("Index : "+index+" Weight : "+max);
     }
 }
-
 ```
