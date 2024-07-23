@@ -4,7 +4,7 @@ out to others and discuss various topics around JS programming. This community h
 modelled as a directed social network graph.
 Find Reachability
 JS newbie A wants to check if he can reach out to a React expert B using his network.
-### Input Format
+### Input Format :
 total members in React Developer Community
 memberId1
 MemberId2..........................MemberIdN
@@ -12,9 +12,9 @@ Total possible edges
 .............................
 Follower
 Following
-### Output Format:
+### Output Format :
 "0" OR "1"
-### Sample Testcase #0
+### Sample Testcase :
 4
 2
 5
@@ -25,10 +25,11 @@ Following
 7 2
 7 9
 9 5
-### Start and end
+### Start and end :
 7 5
-### Testcase Output
+### Testcase Output :
 1
+### Code :
 ``` java
 package Problems.Graph;
 
