@@ -22,7 +22,7 @@ nums = [-1,0,3,5,9,12], target = 2
 import java.util.Scanner;
 
 public class BinarySearch {
-    int ans=-1;
+    private int ans=-1;
     int recursiveBinarySearch(int[]arr,int target,int low,int high) {
         if (low > high) return -1;
         int mid = (low + high) / 2;
