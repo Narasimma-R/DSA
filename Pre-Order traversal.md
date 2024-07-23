@@ -63,4 +63,6 @@ public class BinaryTreeImplementation {
         Node root=tree.buildTree(nodes);
         System.out.println("PRE ORDER");
         tree.doPreOrder();
+    }
+}
 ```
